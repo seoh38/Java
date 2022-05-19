@@ -1,0 +1,13 @@
+package com.kh.stream.terminal;
+
+public class B_Aggregate {
+	/*
+	 *  기본 집계
+	 *  
+	 *  
+	 *  커스텀 집계
+	 *  
+	 *  
+	 *  Optional 클래스
+	 */
+}

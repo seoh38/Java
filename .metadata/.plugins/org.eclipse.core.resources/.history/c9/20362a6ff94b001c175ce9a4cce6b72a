@@ -1,0 +1,11 @@
+package com.kh.lambda.standard;
+
+public class B_Supplier {
+	/*
+	 * Supplier
+	 *  - Supplier 함수적 인터페이스는 매개 변수가 없고 리턴 값이 있는 getXXX() 메소드를 가지고 있다.
+	 *  
+	 */
+	
+
+}

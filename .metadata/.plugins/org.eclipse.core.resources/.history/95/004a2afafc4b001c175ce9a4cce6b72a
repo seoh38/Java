@@ -1,0 +1,24 @@
+package com.kh.lambda.standard;
+
+import java.util.function.Function;
+
+import com.kh.lambda.standard.model.vo.Student;
+
+public class C_Function {
+	/*
+	 * Function
+	 *   - Function 함수적 인터페이스는 매개값 리턴값이 있는 applyXXX() 메소드를 가지고 있다.
+	 *   - 주로 매개값을 리턴값으로 매핑(타입을 변환) 하는 역할을 한다.
+	 */
+	
+	public void method1() {
+		Student student = new Student("이서희", 26, "여자", 90, 90);
+		
+		Function<Student, String> function = (Student s) -> {
+			
+			// 이름(String) 리턴
+			return s.getName();
+		};
+	}
+
+}

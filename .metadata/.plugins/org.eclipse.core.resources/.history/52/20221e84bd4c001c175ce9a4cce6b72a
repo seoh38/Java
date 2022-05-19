@@ -1,0 +1,37 @@
+package com.kh.stream.intermediate;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.kh.stream.model.vo.Student;
+
+public class B_Mapping {
+	/*
+	 * Mapping
+	 *   - 중간 처리 기능으로 스트림의 요소를 다른 요소로 대체하는 작업을 말한다.
+	 *     - flatMapXXX()     : 하나의 요소를 복수의 요소들로 구성된 새로운 스트림을 생성한다.
+	 *     - Map()		      : 요소를 대체하는 요소로 구성된 새로운 스트림을 생성한다.
+	 *     - asDoubleStream() : IntStream, LongStream => DoubleStream으로 변환해서 리턴한다.
+	 *     - asLongStream()   : IntStream, DoubleStream => LongStream으로 변환해서 리턴한다.
+	 *     - boxed()          : int, long. double 요소를 Integer, Long, Double 요소로 박싱해서 스트림을 생성한다.
+	 */
+	
+	public void method1() {
+		List<Student> list = Arrays.asList(
+				new Student("도경수", 29, "남자", 80, 70),
+				new Student("오세훈", 29, "남자", 70, 90),
+				new Student("이서희", 29, "여자", 100, 100)
+			);
+		
+		// 요소를 대체하는 새로운 요소로 변경해줌
+		// 매개값으로 함수적 인터페이스를 익명 구현 객체로 만들어주는 람다식을 넣어준다.
+		// 리턴되는
+		list.stream()
+		    // map()으로 감싸주면 리턴되는 값만 모아서 새로운 stream 생성
+			.map((student) -> student.getName())
+			.forEach((name) -> System.out.println(name));
+
+		
+	}
+
+}

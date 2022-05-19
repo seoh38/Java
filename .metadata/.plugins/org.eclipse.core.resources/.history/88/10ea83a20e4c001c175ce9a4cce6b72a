@@ -1,0 +1,12 @@
+package com.kh.stream.basic;
+
+public class A_Create {
+	/*
+	 *  스트림의 종류
+	 *   - java.util.stream 패키지에 존재하고 BaseStream 인터페이스를 부모로 해서
+	 *     자식 인터페이스들이 상속 관계를 이루고 있다.
+	 *   - Stream, IntStream, LongStream, DoubleStream  
+	 * 
+	 */
+
+}
